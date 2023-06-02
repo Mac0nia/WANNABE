@@ -1,5 +1,14 @@
 class ArtistsController < ApplicationController
 
+  def index
+
+  end
+
+  def show
+
+  end
+
+
   def create
     @artist = Artist.new(artist_params)
     @artist.image = params[:artist][:image]
