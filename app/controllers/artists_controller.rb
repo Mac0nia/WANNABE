@@ -5,24 +5,22 @@ class ArtistsController < ApplicationController
   end
 
   def show
+    @gift = Artist.find(params[:id])
   end
 
 
   def create
     @artist = Artist.new(artist_params)
-    @artist.image = params[:artist][:image]
-
-    if @artist.save
-
+    if @artist.save!
+      redirect_to @artist, notice: 'Artist was successfully created.'
     else
-
+      render :new
     end
   end
 
   private
 
   def artist_params
-    params.require(:artist).permit(:name, :bio)
+    params.require(:artist).permit(:name, :bio, :image)
   end
-
 end
