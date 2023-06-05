@@ -4,10 +4,9 @@ Rails.application.routes.draw do
   end
 
   root to: "pages#home"
+  get '/about', to: 'pages#about'
 
-
-  resources :artists, only: [:index, :show]
-  resources :about, only: :index
-  resources :news, only: :index
+  resources :artists
+  resources :news, only: [:index, :show]
 
 end
