@@ -5,5 +5,7 @@ Rails.application.routes.draw do
 
   root to: "pages#home"
 
-  resources :artists, only: :index
+  resources :artists, only: [:index, :show]
+  resources :about, only: :index
+  resources :news, only: :index
 end
