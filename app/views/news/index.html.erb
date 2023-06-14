@@ -1,6 +1,8 @@
-<% @news.each do |new| %>
-  <div class="new">
-    <h2><%= News.name %></h2>
-    <p><%= News.bio %></p>
+<h1>News</h1>
+
+<% @news_items.each do |news_item| %>
+  <div class="news-item">
+    <h2><%= news_item.title %></h2>
+    <p><%= news_item.content %></p>
   </div>
 <% end %>
