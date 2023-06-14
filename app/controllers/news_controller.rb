@@ -1,9 +1,9 @@
 class NewsController < ApplicationController
   def index
-    @news = News.all
+    @news_items = News.all
   end
 
   def show
-    @news = News.find(params[:id])
+    @news_items = News.find(params[:id])
   end
 end
