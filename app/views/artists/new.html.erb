@@ -1,0 +1,15 @@
+<div class="d-flex justify-content-center my-5">
+  <div class="col-12 col-lg-3">
+    <div class="card text-center align-self-center border-0" style="background-color:#ddcecde8">
+<div class="Upload Form">
+  <h3>Create a new Artist:</h3>
+  <%= simple_form_for @artist do |form| %>
+    <%= form.input :name, label: "Artist Name" %>
+    <%= form.input :bio, label: "Bio" %>
+    <%= form.input :photo, as: :file, label: "Image" %>
+    <%= form.button :submit, class: "buttons" %>
+  <% end %>
+</div>
+</div>
+</div>
+</div>

@@ -7,6 +7,6 @@ Rails.application.routes.draw do
   get '/about', to: 'pages#about'
 
   resources :artists
-  resources :news, only: [:index, :show]
+  resources :news
 
 end
