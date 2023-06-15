@@ -1,0 +1,12 @@
+<div class="d-flex justify-content-center my-5">
+    <div class="card text-center align-self-center border-0" style="background-color:#ddcecde8">
+    <div class="Upload Form">
+      <h3>Create a News:</h3>
+      <%= simple_form_for @news do |form| %>
+        <%= form.input :title, label: "News Title" %>
+        <%= form.input :content, label: "Content" %>
+        <%= form.button :submit, class: "buttons" %>
+      <% end %>
+    </div>
+  </div>
+</div>

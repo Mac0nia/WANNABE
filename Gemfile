@@ -30,6 +30,11 @@ gem "jbuilder"
 # Use Redis adapter to run Action Cable in production
 gem "redis", "~> 4.0"
 
+# anime.js for animation
+gem 'anime-rails', '~> 3.2', '>= 3.2.1.2'
+
+gem 'faker'
+
 # Use Kredis to get higher-level data types in Redis [https://github.com/rails/kredis]
 # gem "kredis"
 

@@ -1,2 +1,12 @@
-<h1>Wannabi</h1>
+<div class="banner" style="background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url(https://github.com/AlePili/alepili-images-resouce/blob/main/shapes.jpg?raw=true);">   
+    <div class="text-center">
+         <%# <h1>Wannabi</h1> %>
+         <h1 class="ml2">Wannabi</h1>
+    </div>
 
+     <% @artists.each  do |artist| %>
+            <h4><%= artist.name %></h4>
+            <h5><%= artist.genre %></h5>
+            <p><%= artist.bio %></p>
+     <% end %>
+</div>
