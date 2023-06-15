@@ -1,5 +1,6 @@
 class NewsController < ApplicationController
   def index
+    @news = News.all
     if params[:query].present?
       @news = News.where(name: params[:query])
     else
@@ -26,10 +27,12 @@ class NewsController < ApplicationController
     @news = News.find(params[:id])
   end
 
+
+
   private
 
   def news_params
     params.require(:news).permit(:title, :content, :photo)
   end
-
+  
 end
